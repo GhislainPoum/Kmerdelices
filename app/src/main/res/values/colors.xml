@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">#EC5A2D</color>
     <color name="colorPrimaryDark">#BB4927</color>
     <color name="colorAccent">#0066FF</color>
-    <color name="greenC">#01D277</color>
+    <color name="greenC" tools:ignore="MissingDefaultResource">#01D277</color>
     <color name="purpleC">#0066FF</color>
     <color name="link">#0066FF</color>
     <color name="blackText">#000000</color>
