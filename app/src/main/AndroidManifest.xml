@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poum.kmerdelices">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_nam"
+        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.poum.kmerdelices.ui.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.poum.kmerdelices.ui.category.CategoryActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:label="Catégorie"/>
+
+        <activity
+            android:name="com.poum.kmerdelices.ui.detail.DetailActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.poum.kmerdelices.ui.home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
