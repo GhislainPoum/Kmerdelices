@@ -2,7 +2,7 @@
     <string name="app_name">K\'merDélices</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="favorite">Favoris</string>
-    <string name="search_your_recipes">Recherche</string>
+    <string name="search_your_recipes">Recherche </string>
     <string name="meal_categories">Catégories</string>
     <string name="category">Catégorie</string>
     <string name="country">Region</string>
