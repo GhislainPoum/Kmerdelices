@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.poum.kmerdelices.ui.SplashActivity"
+    tools:context="com.togettech.kmerdelices.ui.SplashActivity"
     android:background="@color/colorPrimary">
 
    <TextView

@@ -12,4 +12,8 @@
     <string name="app_nam">kmerdelices</string>
     <string name="cmd">Commander</string>
     <string name="res">Reserver</string>
+
+    <string name="facebook_app_id">627400858014419</string>
+    <string name="fb_login_protocol_scheme">fb627400858014419</string>
+
 </resources>
