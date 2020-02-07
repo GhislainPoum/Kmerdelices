@@ -5,11 +5,12 @@ import android.os.Bundle;
 
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.togettech.kmerdelices.R;
+import com.togettech.kmerdelices.login.LoginActivity;
 import com.togettech.kmerdelices.ui.home.HomeActivity;
 
 import butterknife.BindView;
@@ -19,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
     @BindView(R.id.splash)
-    TextView splash;
+    ImageView splash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
 
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.transition);
         splash.startAnimation(animation);
-        final Intent intent = new Intent(this, HomeActivity.class);
+        final Intent intent = new Intent(this, LoginActivity.class);
         Thread timer = new Thread(){
             public void run(){
                 try {

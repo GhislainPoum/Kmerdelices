@@ -3,18 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context="com.togettech.kmerdelices.ui.SplashActivity"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/backgroundkmer">
 
-   <TextView
+   <ImageView
+       android:layout_marginTop="100dp"
+       android:layout_width="250dp"
+       android:layout_height="200dp"
+       android:src="@drawable/delices0"/>
+
+   <ImageView
        android:id="@+id/splash"
-       android:text="@string/app_name"
-       android:textSize="34sp"
-       android:textColor="@color/whiteC"
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content" />
+       android:layout_height="wrap_content"
+       android:layout_marginTop="60dp"
+       android:src="@drawable/created"
+       android:textColor="@color/whiteC"/>
+
+   <RelativeLayout
+       android:layout_marginTop="150dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#9AFFFFFF"
+          android:text="Delices for all"/>
+   </RelativeLayout>
 
 
 </LinearLayout>

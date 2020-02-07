@@ -6,13 +6,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/delices0"
         android:label="@string/app_nam"
-        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:roundIcon="@drawable/delices0"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.togettech.kmerdelices.ui.SplashActivity"
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,41 +24,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.togettech.kmerdelices.ui.category.CategoryActivity"
-            android:theme="@style/AppTheme"
+            android:name=".ui.category.CategoryActivity"
+            android:label="Catégorie"
             android:screenOrientation="portrait"
-            android:label="Catégorie"/>
-
+            android:theme="@style/AppTheme" />
         <activity
-            android:name="com.togettech.kmerdelices.ui.detail.DetailActivity"
-            android:theme="@style/AppTheme"/>
+            android:name=".ui.detail.DetailActivity"
+            android:theme="@style/AppTheme" />
         <activity
-            android:name="com.togettech.kmerdelices.ui.home.HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:name=".ui.home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id"/>
+            android:value="@string/facebook_app_id" />
+
         <activity
             android:name="com.facebook.FacebookActivity"
-            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
-
     </application>
-
-
-
 
 </manifest>

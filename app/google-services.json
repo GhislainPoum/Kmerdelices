@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "382760321438",
+    "firebase_url": "https://olian-b708d.firebaseio.com",
+    "project_id": "olian-b708d",
+    "storage_bucket": "olian-b708d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382760321438:android:c2fb0e1706cdc40362968f",
+        "android_client_info": {
+          "package_name": "com.togettech.kmerdelices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382760321438-ldh17ionk058aaralhphd75ov7tkp3sq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.togettech.kmerdelices",
+            "certificate_hash": "84eeca77bf3f478f8c6761c7a61f63fa15d79f20"
+          }
+        },
+        {
+          "client_id": "382760321438-osuvdiasq5314atbrvj0pujja5kvmm5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnaLavc1D737s7x-FcaLow8ArFTHuPIcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382760321438-osuvdiasq5314atbrvj0pujja5kvmm5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

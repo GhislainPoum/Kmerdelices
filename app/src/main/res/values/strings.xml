@@ -13,7 +13,14 @@
     <string name="cmd">Commander</string>
     <string name="res">Reserver</string>
 
+    <string name="google_connexion">Se connecter avec Google</string>
+    <string name="email_connexion">Se connecter avec son email</string>
+    <string name="facebook_connexion">Se connecter avec Facebook</string>
+
+
     <string name="facebook_app_id">627400858014419</string>
     <string name="fb_login_protocol_scheme">fb627400858014419</string>
+
+    <string name="txtLogin">En cliquant sur connexion, vous acceptez nos termes et conditions</string>
 
 </resources>
