@@ -12,4 +12,8 @@
     <string name="app_nam">kmerdelices</string>
     <string name="cmd">Commander</string>
     <string name="res">Reserver</string>
+
+    <string name="google_connexion">Se connecter avec Google</string>
+    <string name="email_connexion">Se connecter avec son email</string>
+    <string name="facebook_connexion">Se connecter avec Facebook</string>
 </resources>

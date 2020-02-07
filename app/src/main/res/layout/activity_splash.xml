@@ -3,18 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.poum.kmerdelices.ui.SplashActivity"
+
+    tools:context="com.togettech.kmerdelices.ui.SplashActivity"
     android:background="@color/colorPrimary">
+
+   <ImageView
+       android:layout_marginTop="100dp"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/ico"/>
 
    <TextView
        android:id="@+id/splash"
        android:text="@string/app_name"
+       android:layout_marginTop="60dp"
        android:textSize="34sp"
        android:textColor="@color/whiteC"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content" />
+
+   <RelativeLayout
+       android:layout_marginTop="270dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/copyri"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/copyri"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:layout_toEndOf="@id/copyri"
+          android:text="TogetTech, Inc"
+          android:layout_toRightOf="@id/copyri" />
+   </RelativeLayout>
 
 
 </LinearLayout>
