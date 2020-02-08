@@ -23,4 +23,9 @@
 
     <string name="txtLogin">En cliquant sur connexion, vous acceptez nos termes et conditions</string>
 
+    <string name="action_resto">Restaurants</string>
+    <string name="action_boul">Boulangeries</string>
+    <string name="action_favory">Favoris</string>
+    <string name="action_profil">Compte</string>
+
 </resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_resto"
+            android:text="@string/action_resto"
+            android:gravity="center"
+            style="@style/ActionItem" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:drawableTop="@drawable/ic_boul"
+            android:text="@string/action_boul"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="@style/ActionItem" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:drawableTop="@drawable/ic_favory"
+            android:text="@string/action_favory"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            style="@style/ActionItem"
+            />
+        <TextView
+            android:id="@+id/textView4"
+            android:drawableTop="@drawable/ic_profil"
+            android:text="@string/action_profil"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="@style/ActionItem"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

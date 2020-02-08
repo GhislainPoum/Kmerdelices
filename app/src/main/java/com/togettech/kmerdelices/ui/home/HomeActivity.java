@@ -21,6 +21,7 @@ import com.togettech.kmerdelices.adapters.RecyclerViewHomeAdapter;
 import com.togettech.kmerdelices.adapters.ViewPagerHeaderAdapter;
 import com.togettech.kmerdelices.models.Categories;
 import com.togettech.kmerdelices.models.Meals;
+import com.togettech.kmerdelices.ui.ActionBottomDialogFragment;
 import com.togettech.kmerdelices.ui.category.CategoryActivity;
 import com.togettech.kmerdelices.ui.detail.DetailActivity;
 
@@ -31,7 +32,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HomeActivity extends AppCompatActivity implements HomeView {
+public class HomeActivity extends AppCompatActivity implements HomeView, ActionBottomDialogFragment.ItemClickListener{
 
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
@@ -42,7 +43,7 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
     @BindView(R.id.recyclerCategory)
     RecyclerView recyclerViewCategory;
 
-
+    TextView tvSelectedItem;
 
     HomePresenter presenter;
 
@@ -123,4 +124,15 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
         return super.onOptionsItemSelected(item);
     }
 
+
+    public void showBottomSheet(View view) {
+        ActionBottomDialogFragment addPhotoBottomDialogFragment =
+                ActionBottomDialogFragment.newInstance();
+        addPhotoBottomDialogFragment.show(getSupportFragmentManager(),
+                ActionBottomDialogFragment.TAG);
+    }
+
+    @Override public void onItemClick(String item) {
+        tvSelectedItem.setText("Recherche " + item);
+    }
 }
