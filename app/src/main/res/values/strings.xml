@@ -9,7 +9,6 @@
     <string name="instructions">INSTRUCTIONS</string>
     <string name="dot_loading">...</string>
     <string name="Ingredients">INGREDIENTS</string>
-    <string name="app_nam">kmerdelices</string>
     <string name="cmd">Commander</string>
     <string name="res">Reserver</string>
 
@@ -27,5 +26,6 @@
     <string name="action_boul">Boulangeries</string>
     <string name="action_favory">Favoris</string>
     <string name="action_profil">Compte</string>
+    <string name="activity_profil"></string>
 
 </resources>

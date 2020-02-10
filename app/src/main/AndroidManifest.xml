@@ -7,13 +7,18 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/delices0"
-        android:label="@string/app_nam"
+        android:label="@string/app_name"
         android:roundIcon="@drawable/delices0"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.home.ProfilActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_profil"
+            android:parentActivityName=".ui.home.HomeActivity"/>
+        <activity
             android:name=".login.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">

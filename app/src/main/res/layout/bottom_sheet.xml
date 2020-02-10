@@ -82,6 +82,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/go_account"
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="150dp"

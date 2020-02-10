@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +16,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.togettech.kmerdelices.R;
 import com.togettech.kmerdelices.Utils;
 import com.togettech.kmerdelices.adapters.RecyclerViewHomeAdapter;
 import com.togettech.kmerdelices.adapters.ViewPagerHeaderAdapter;
+import com.togettech.kmerdelices.login.LoginActivity;
 import com.togettech.kmerdelices.models.Categories;
 import com.togettech.kmerdelices.models.Meals;
 import com.togettech.kmerdelices.ui.ActionBottomDialogFragment;
@@ -47,6 +51,8 @@ public class HomeActivity extends AppCompatActivity implements HomeView, ActionB
 
     HomePresenter presenter;
 
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +63,7 @@ public class HomeActivity extends AppCompatActivity implements HomeView, ActionB
         presenter.getMeals();
         presenter.getCategories();
 
+        mAuth = FirebaseAuth.getInstance();
 //        searchFood.setOnClickListener(this);
     }
 
@@ -134,5 +141,22 @@ public class HomeActivity extends AppCompatActivity implements HomeView, ActionB
 
     @Override public void onItemClick(String item) {
         tvSelectedItem.setText("Recherche " + item);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser == null){
+            updateUI();
+        }
+
+    }
+
+    private void updateUI() {
+        Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -1,10 +1,12 @@
 package com.togettech.kmerdelices.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,9 +14,12 @@ import androidx.annotation.Nullable;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.togettech.kmerdelices.R;
+import com.togettech.kmerdelices.ui.home.ProfilActivity;
 
 public class ActionBottomDialogFragment extends BottomSheetDialogFragment
         implements View.OnClickListener {
+
+    LinearLayout go_account;
 
     public static final String TAG = "ActionBottomDialog";
 
@@ -27,7 +32,25 @@ public class ActionBottomDialogFragment extends BottomSheetDialogFragment
     @Nullable @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.bottom_sheet, container, false);
+
+        //return inflater.inflate(R.layout.bottom_sheet, container, false);
+
+        View view = inflater.inflate(R.layout.bottom_sheet, container, false);
+
+        go_account = view.findViewById(R.id.go_account);
+        go_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ProfilUser();
+            }
+        });
+
+        return view;
+    }
+
+    private void ProfilUser() {
+        Intent intent = new Intent(getActivity(), ProfilActivity.class);
+        startActivity(intent);
     }
 
     @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
